@@ -1,4 +1,5 @@
-module Registradores(
+module registers(
+    input wire clk,                  //Sinal de clock
     input wire [4:0] ReadRegister1,  // Endereço do registrador para leitura 1
     input wire [4:0] ReadRegister2,  // Endereço do registrador para leitura 2
     input wire [4:0] WriteRegister,  // Endereço do registrador para escrita
@@ -9,12 +10,12 @@ module Registradores(
 );
 
     // Banco de registradores: 32 registradores de 32 bits
-  reg [255:0] registers [31:0];
+  reg [31:0] registers [31:0];
 
     // Inicialização dos registradores (opcional, apenas para simulação)
     integer i;
     initial begin
-      for (i = 0; i < 255; i = i + 1) begin
+      for (i = 0; i < 31; i = i + 1) begin
             registers[i] = 32'b0;  // Inicializa todos com zero
         end
     end

@@ -1,3 +1,5 @@
+`include "ALU.v"
+`include "ALUControl.v"
 module ALU_plus_ALUControl(
  
     input wire [31:0] A,           // Operando 1   
