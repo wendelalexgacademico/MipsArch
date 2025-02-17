@@ -8,7 +8,7 @@
 `include "registers.v"
 `include "signExtended.v"
 `include "ALU.v"
-module proessador(
+module processador(
    
     input clk,                   // Sinal de clk
     input rst,                   // Sinal de rst
